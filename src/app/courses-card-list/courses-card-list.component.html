@@ -1,4 +1,10 @@
-<mat-card class="course-card mat-elevation-z7" *ngFor="let course of courses">
+
+<mat-grid-list [cols]="cols" [rowHeight]="rowHeight"
+				[ngClass]="{'handset-portrait':handsetPortrait}" >
+
+	<mat-grid-tile *ngFor="let course of courses">
+
+		<mat-card class="course-card mat-elevation-z7" *ngFor="let course of courses">
 	<mat-card-header>
 		<mat-card-title>{{course.description}} </mat-card-title>
 	</mat-card-header>
@@ -22,3 +28,7 @@
      </mat-card-actions>
 
 </mat-card>
+	</mat-grid-tile>
+</mat-grid-list>
+
+<div  ></div>

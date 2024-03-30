@@ -8,12 +8,17 @@ import {CreateCourseComponent} from './create-course/create-course.component';
 import {DragDropComponent} from './drag-drop/drag-drop.component';
 import {TreeDemoComponent} from './tree-demo/tree-demo.component';
 import {VirtualScrollingComponent} from './virtual-scrolling/virtual-scrolling.component';
+import { LoginComponent } from './login/login.component';
 
 const routes: Routes = [
     {
         path: "",
         component: HomeComponent
 
+    },
+    {
+        path:"login",
+        component:LoginComponent
     },
     {
         path: "about",

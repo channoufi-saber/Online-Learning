@@ -45,11 +45,14 @@ import {TreeDemoComponent} from './tree-demo/tree-demo.component';
 import {MatTreeModule} from '@angular/material/tree';
 import {VirtualScrollingComponent} from './virtual-scrolling/virtual-scrolling.component';
 import {ScrollingModule} from '@angular/cdk/scrolling';
+import { LoginComponent } from './login/login.component';
+import { OnlyOneErrorPipe } from './pipes/only-one-error.pipe';
 
 @NgModule({
     declarations: [
         AppComponent,
         HomeComponent,
+        LoginComponent,
         AboutComponent,
         CourseComponent,
         CoursesCardListComponent,
@@ -59,7 +62,8 @@ import {ScrollingModule} from '@angular/cdk/scrolling';
         CreateCourseStep2Component,
         DragDropComponent,
         TreeDemoComponent,
-        VirtualScrollingComponent
+        VirtualScrollingComponent,
+        OnlyOneErrorPipe
     ],
     imports: [
         BrowserModule,
@@ -92,7 +96,7 @@ import {ScrollingModule} from '@angular/cdk/scrolling';
         ReactiveFormsModule,
         MatGridListModule,
         MatTreeModule,
-        ScrollingModule
+        ScrollingModule,
     ],
     providers: [
         CoursesService
